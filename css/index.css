@@ -133,4 +133,30 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Share', cursive;
+  width: 75%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0023FF;
+}
+header h1 {
+  font-size: 60px;
+  color: white;
+}
+header h4 {
+  font-size: 40px;
+  color: white;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  background-color: #0023FF;
+}
+.contact p {
+  color: white;
+  font-size: 30px;
 }
