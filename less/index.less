@@ -61,6 +61,11 @@ html, body {
 }
 
 @maincolor:#B8C2FF;
+@accentcolor:#011699;
+.border(){
+	border-bottom:2px solid @maincolor;
+	
+  }
 
 header{
 	display:flex;
@@ -95,11 +100,112 @@ header{
 	}
 
 	p{
-		color:black;
-		font-size:30px;
+		font-size:25px;
 	}
 }
 
 img{
 	margin-right:5px;
+}
+
+.content{
+	display:flex;
+	flex-direction:row;
+	padding:20px;
+	border:2px solid @maincolor;
+	background-color:#F9FAFF;
+	
+
+	.colleft{
+		margin-right:20px;
+		width:100%;
+
+		p{
+			font-size:19px;
+			margin-bottom:20px;
+			line-height: 1.2;
+		}
+
+		ul{
+			margin:20px 0px;;
+			list-style-type: square;
+			li{
+				font-size:19px;
+				margin-left:20px;
+				margin-bottom: 5px;
+			}
+		}
+
+		.lastul{
+			margin-bottom:0px;
+		}
+	}
+
+	.colheader{
+		display:flex;
+		flex-direction:row;
+		align-items:center;
+		.border();
+		margin-bottom:20px;
+		padding-bottom:5px;
+		h6{
+			font-size:30px;
+		}
+	}
+
+	.jobheader{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		align-items:baseline;
+		margin-bottom:10px;
+
+		h4{
+			font-size:30px;
+		}
+
+		h5{
+			font-size:20px;
+		}
+	}
+
+	.rightcol{
+		.jobheader{
+			display:flex;
+			flex-direction:column;
+			margin-bottom: 20px;
+			h5{
+				font-size:22px;
+				margin:5px 0px;
+			}
+
+			p{
+				font-size:19px;
+			}
+		}
+
+		.skills{
+			display:flex;
+			flex-direction: row;
+			div{
+				margin-right: 20px;
+				h5{
+					font-size:22px;
+					margin-bottom: 10px;
+				}
+				ul{
+					li{
+						font-size:16px;
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer{
+	background-color: @maincolor;
+	text-align: center;
+	padding:20px;
 }
