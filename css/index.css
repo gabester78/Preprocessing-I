@@ -137,6 +137,12 @@ body {
   width: 75%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 90%;
+  }
+}
 header {
   display: flex;
   flex-direction: row;
@@ -145,12 +151,23 @@ header {
   background-color: #B8C2FF;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}
 header h1 {
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 700;
 }
 header h4 {
   font-size: 30px;
+}
+@media (max-width: 500px) {
+  header h4 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
 }
 .contactparent {
   display: flex;
@@ -160,10 +177,20 @@ header h4 {
   padding: 0px 20px 20px 20px;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .contactparent {
+    flex-direction: column;
+  }
+}
 .contactparent .contact {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .contactparent .contact {
+    margin: 5px 0px;
+  }
 }
 .contactparent p {
   font-size: 25px;
@@ -177,6 +204,11 @@ img {
   padding: 20px;
   border: 2px solid #B8C2FF;
   background-color: #F9FAFF;
+}
+@media (max-width: 500px) {
+  .content {
+    flex-direction: column;
+  }
 }
 .content .colleft {
   margin-right: 20px;
@@ -222,6 +254,11 @@ img {
 }
 .content .jobheader h5 {
   font-size: 20px;
+}
+@media (max-width: 500px) {
+  .content .rightcol .colheader .space {
+    margin-top: 20px;
+  }
 }
 .content .rightcol .jobheader {
   display: flex;

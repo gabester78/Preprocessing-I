@@ -58,14 +58,19 @@ html, body {
 	font-family: 'Share', cursive;
 	width:75%;
 	margin: 0 auto;
+	@media @mobile{
+		width:90%;
+	}
+
 }
 
 @maincolor:#B8C2FF;
 @accentcolor:#011699;
 .border(){
-	border-bottom:2px solid @maincolor;
-	
+	border-bottom:2px solid @maincolor;	
   }
+@mobile: ~"(max-width: 500px)";
+  
 
 header{
 	display:flex;
@@ -75,13 +80,22 @@ header{
 	background-color:@maincolor;
 	padding:20px;
 
+	@media @mobile{
+		flex-direction:column;
+	}
+
 	h1{
-		font-size:50px;
+		font-size:55px;
 		font-weight:700;
 	}
 
 	h4{
 		font-size:30px;
+		
+		@media @mobile{
+			font-size:25px;
+			margin-top: 20px;
+		}
 	}
 } 
 
@@ -93,10 +107,18 @@ header{
 	padding:0px 20px 20px 20px;
 	align-items:center;
 
+	@media @mobile{
+		flex-direction:column;
+	}
+
 	.contact{
 		display:flex;
 		flex-direction:row;
 		align-items:center;
+
+		@media @mobile{
+			margin:5px 0px;
+		}
 	}
 
 	p{
@@ -115,6 +137,9 @@ img{
 	border:2px solid @maincolor;
 	background-color:#F9FAFF;
 	
+	@media @mobile{
+		flex-direction:column;
+	}
 
 	.colleft{
 		margin-right:20px;
@@ -170,6 +195,15 @@ img{
 	}
 
 	.rightcol{
+
+		.colheader{
+			.space{
+					@media @mobile{
+						margin-top: 20px;
+					}
+			}
+		}
+
 		.jobheader{
 			display:flex;
 			flex-direction:column;
