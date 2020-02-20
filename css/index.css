@@ -141,22 +141,34 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #0023FF;
+  align-items: center;
+  background-color: #B8C2FF;
+  padding: 20px;
 }
 header h1 {
-  font-size: 60px;
-  color: white;
+  font-size: 50px;
+  font-weight: 700;
 }
 header h4 {
-  font-size: 40px;
-  color: white;
+  font-size: 30px;
 }
-.contact {
+.contactparent {
   display: flex;
   flex-direction: row;
-  background-color: #0023FF;
+  justify-content: space-between;
+  background-color: #B8C2FF;
+  padding: 0px 20px 20px 20px;
+  align-items: center;
 }
-.contact p {
-  color: white;
+.contactparent .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contactparent p {
+  color: black;
   font-size: 30px;
+}
+img {
+  margin-right: 5px;
 }

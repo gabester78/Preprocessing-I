@@ -60,32 +60,46 @@ html, body {
 	margin: 0 auto;
 }
 
-@maincolor:#0023FF;
+@maincolor:#B8C2FF;
 
 header{
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
+	align-items:center;
 	background-color:@maincolor;
+	padding:20px;
 
 	h1{
-		font-size:60px;
-		color:white;
+		font-size:50px;
+		font-weight:700;
 	}
 
 	h4{
-		font-size:40px;
-		color:white;
+		font-size:30px;
 	}
 } 
 
-.contact{
+.contactparent{
 	display:flex;
 	flex-direction:row;
+	justify-content:space-between;
 	background-color:@maincolor;
+	padding:0px 20px 20px 20px;
+	align-items:center;
+
+	.contact{
+		display:flex;
+		flex-direction:row;
+		align-items:center;
+	}
 
 	p{
-		color:white;
+		color:black;
 		font-size:30px;
 	}
+}
+
+img{
+	margin-right:5px;
 }
